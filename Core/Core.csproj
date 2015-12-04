@@ -61,11 +61,13 @@
     <Compile Include="2-Advanced\DataPipes\Classes\DataPipeHandler.cs" />
     <Compile Include="2-Advanced\DataPipes\Classes\PIConsoleDataObserver.cs" />
     <Compile Include="2-Advanced\DataPipes\PIDataPipeListener.cs" />
+    <Compile Include="3-Utility\AFEventFramesUtil\AFEventFramesUtil.cs" />
     <Compile Include="3-Utility\PIDeleteUtil\PIDelete.cs" />
     <Compile Include="1-Basics\PIDataArchive\PIFindPoints.cs" />
     <Compile Include="1-Basics\PIDataArchive\PIGetCurrentValue.cs" />
     <Compile Include="1-Basics\PIDataArchive\PIGetCurrentValueBulk.cs" />
     <Compile Include="Library\AppletExceptions.cs" />
+    <Compile Include="Library\DataHandling\FileLoader.cs" />
     <Compile Include="Library\Helpers.cs" />
     <Compile Include="Library\PiConnectionHelper.cs" />
     <Compile Include="Library\AfConnectionHelper.cs" />
@@ -80,10 +82,10 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="AppletTemplate.cs.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo copying ExampleLibraryDll to console project - to build command line options dynamically.
